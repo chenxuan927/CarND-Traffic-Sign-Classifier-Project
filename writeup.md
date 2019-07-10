@@ -65,7 +65,9 @@ Here is an exploratory visualization of the data set. It is a bar chart showing 
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
-For image data preprocessing, I only perform the minimally required normalization method following the given instruction. In details, for image data, (pixel - 128)/ 128 is a quick way to approximately normalize the data and is used in this project.
+For image data preprocessing, I only perform the minimally required normalization method following the given instruction. In details, for image data, (pixel - 128)/ 128 is a quick way to approximately normalize the data and is used in this project. 
+
+The goal of normalization is to change the values of the dataset to a common scale, without distorting differences in the ranges of input values. It can prepare a "better" dataset for training.  
 
 
 #### 2. Describe what your final model architecture looks like including model type, layers, layer sizes, connectivity, etc.) Consider including a diagram and/or table describing the final model.
