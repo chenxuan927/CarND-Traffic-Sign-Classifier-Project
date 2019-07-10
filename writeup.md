@@ -23,11 +23,11 @@ The goals / steps of this project are the following:
 [image2]: ./training.jpg "Training Dataset"
 [image3]: ./validation.jpg "Validation Dataset"
 [image4]: ./testing.jpg "Testing Dataset"
-[image5]: ./test image/go_straight_or_right.jpg "Traffic Sign 1"
-[image6]: ./test image/priority_road.jpg "Traffic Sign 2"
-[image7]: ./test image/road_work.jpg "Traffic Sign 3"
-[image8]: ./test image/speed_limit_30.jpg "Traffic Sign 4"
-[image9]: ./test image/stop.jpg "Traffic Sign 5"
+[image5]: ./test_image/go_straight_or_right.jpg "Traffic Sign 1"
+[image6]: ./test_image/priority_road.jpg "Traffic Sign 2"
+[image7]: ./test_image/road_work.jpg "Traffic Sign 3"
+[image8]: ./test_image/speed_limit_30.jpg "Traffic Sign 4"
+[image9]: ./test_image/stop.jpg "Traffic Sign 5"
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -111,15 +111,25 @@ My final model results were:
 
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
+
 LeNet-5 architecture as provided in CarND-LeNet-Lab is used at first
+
 * What were some problems with the initial architecture?
+
 the validation accuracy is always less than 0.9 and it gets overfitting as I increase the epochs number. 
+
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
+
 drop out is applied at fully connected layer to prevent overfitting 
+
 * Which parameters were tuned? How were they adjusted and why?
+
 Number of epochs is set to 30 to prevent overfitting, because increasing this parameter does not give any significant improvents 
+
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
+
 drop out is applied to prevent overfitting to help the model get a better result than before. 
+
  
 ### Test a Model on New Images
 
