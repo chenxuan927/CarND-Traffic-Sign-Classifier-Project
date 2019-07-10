@@ -99,7 +99,7 @@ My final model consisted of the following layers:
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used the following parameters:
-* Number of epochs = 30. 
+* Number of epochs = 20. 
 * Batch size = 128
 * Learning rate = 0.001
 * Optimizer - Adam algorithm
@@ -108,8 +108,8 @@ To train the model, I used the following parameters:
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
 My final model results were:
-* validation set accuracy of ? 
-* test set accuracy of ?
+* validation set accuracy of 0.958
+* test set accuracy of 0.936
 
 
 If an iterative approach was chosen:
@@ -127,7 +127,7 @@ If an iterative approach was chosen:
 
 * Which parameters were tuned? How were they adjusted and why?
 
-  Number of epochs is set to 30 to prevent overfitting, because increasing this parameter does not give any significant improvents 
+  Number of epochs is set to 20 to prevent overfitting, because increasing this parameter does not give any significant improvents 
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
@@ -157,19 +157,19 @@ Here are the results of the prediction:
 | Speed limit (30km/h)	| Speed limit (30km/h)					 		|
 | Stop					| Stop   										|
 
-The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of .
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%. This compares favorably to the accuracy on the test set of 0.936.
 
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a go straight or right sign (probability of 0.64), and the image does contain a go straight or right sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a go straight or right sign (probability of 0.97), and the image does contain a go straight or right sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.63         			| Go straight or right  						| 
-| 0.36     				| Keep right									|
+| 0.97         			| Go straight or right  						| 
+| 0.02     				| Keep right									|
 | 0.01					| General caution								|
 | 0.00	      			| Bumpy Road					 				|
 | 0.00				    | Slippery Road      							|
