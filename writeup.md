@@ -50,17 +50,13 @@ signs data set:
 * The size of test set is 12630
 * The shape of a traffic sign image is (32 , 32, 3)
 * The number of unique classes/labels in the data set is 43
-
 ![alt text][image1]
 
 #### 2. Include an exploratory visualization of the dataset.
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the training data is distributed across the various classes.
-
 ![alt text][image2]
-
 ![alt text][image3]
-
 ![alt text][image4]
 
 ### Design and Test a Model Architecture
@@ -93,6 +89,9 @@ My final model consisted of the following layers:
 | Fully connected		| output 43      								|
 |						|												|
 
+
+
+
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 To train the model, I used the following parameters:
@@ -109,26 +108,27 @@ My final model results were:
 * validation set accuracy of ? 
 * test set accuracy of ?
 
+
 If an iterative approach was chosen:
 * What was the first architecture that was tried and why was it chosen?
-
-** LeNet-5 architecture as provided in CarND-LeNet-Lab is used at first
+  
+  LeNet-5 architecture as provided in CarND-LeNet-Lab is used at first
 
 * What were some problems with the initial architecture?
 
-** the validation accuracy is always less than 0.9 and it gets overfitting as I increase the epochs number. 
+  the validation accuracy is always less than 0.9 and it gets overfitting as I increase the epochs number. 
 
 * How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
 
-** drop out is applied at fully connected layer to prevent overfitting 
+  drop out is applied at fully connected layer to prevent overfitting 
 
 * Which parameters were tuned? How were they adjusted and why?
 
-** Number of epochs is set to 30 to prevent overfitting, because increasing this parameter does not give any significant improvents 
+  Number of epochs is set to 30 to prevent overfitting, because increasing this parameter does not give any significant improvents 
 
 * What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
 
-** drop out is applied to prevent overfitting to help the model get a better result than before. 
+  drop out is applied to prevent overfitting to help the model get a better result than before. 
 
  
 ### Test a Model on New Images
